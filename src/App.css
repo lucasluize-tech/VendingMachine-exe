@@ -2,33 +2,75 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: darkslateblue;
+  padding: 1rem;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 1rem;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar a.active {
+  color: pink;
 }
 
-.App-link {
-  color: #61dafb;
+.VendingMachine {
+  background-image: url("https://themsuspokesman.com/wp-content/uploads/2019/09/Vending-Machine.jpg");
+  width: 100vw;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
+.VendingMachine h1 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  top: 50px;
+  position: relative;
+}
+
+.drinks h1 {
+  margin-bottom: 40px;
+}
+
+.drinks a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: purple;
+}
+.meals a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: purple;
+}
+
+.meals button {
+  margin: 20px;
+  background-color: rgba(255, 100, 100, 0.5);
+  padding: 1rem;
+  border-radius: 15px;
+  color: red;
+}
+
+.candies a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: purple;
+}
+
+.coke {
+  width: 300px;
+  height: 500px;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  margin-bottom: 50px;
+}
+
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
