@@ -22,7 +22,8 @@
 .VendingMachine {
   background-image: url("https://themsuspokesman.com/wp-content/uploads/2019/09/Vending-Machine.jpg");
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
+  /* why do I get scroll left/right and up/down with vh/vw?? */
 }
 
 .VendingMachine h1 {
